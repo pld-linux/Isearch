@@ -58,14 +58,12 @@ install isearch $RPM_BUILD_ROOT/home/httpd/cgi-bin
 install ifetch $RPM_BUILD_ROOT/home/httpd/cgi-bin
 install ihtml $RPM_BUILD_ROOT/home/httpd/cgi-bin
 
-gzip -9nf CHANGES COPYRIGHT README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES.gz COPYRIGHT.gz README.gz
+%doc CHANGES COPYRIGHT README
 %attr(755,root,root) %{_bindir}/Iindex
 %attr(755,root,root) %{_bindir}/Isearch
 %attr(755,root,root) %{_bindir}/Iutil
