@@ -2,7 +2,7 @@ Summary:	Isearch text search engine
 Summary(pl):	Isearch - silnik przeszukuj±cy tekst
 Name:		Isearch
 Version:	1.47b
-Release:	1
+Release:	2
 License:	distributable
 Group:		Applications/Text
 Group(de):	Applikationen/Text
@@ -38,7 +38,7 @@ tak¿e interfejs CGI.
 %setup -q -n %{name}
 
 %build
-%configure
+%configure2_13
 %{__make} "CFLAGS=-DUNIX -fwritable-strings %{rpmcflags}"
 
 %install
