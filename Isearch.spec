@@ -36,7 +36,9 @@ tak¿e interfejs CGI.
 
 %build
 %configure2_13
-%{__make} "CFLAGS=-DUNIX -fwritable-strings %{rpmcflags}"
+%{__make} \
+	CFLAGS="-DUNIX -fwritable-strings -fno-rtti -fno-exceptions %{rpmcflags}"
+
 
 %install
 rm -rf $RPM_BUILD_ROOT
