@@ -3,9 +3,10 @@ Name:		Isearch
 Version:	1.47b
 Release:	1
 Copyright:	distributable
-Group:		Utilities/Text
+Group:		Applications/Text
+Group(de):	Applikationen/Text
 Group(fr):	Utilitaires/Texte
-Group(pl):	Narzêdzia/Tekst
+Group(pl):	Aplikacje/Tekst
 Source0:	ftp://ftp.etymon.com/pub/Isearch/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +27,7 @@ searching.
 
 %build
 %configure
-%{__make} "CFLAGS=-DUNIX -fwritable-strings $RPM_OPT_FLAGS"
+%{__make} "CFLAGS=-DUNIX -fwritable-strings %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -45,8 +46,6 @@ install Isearch-cgi/search_form $RPM_BUILD_ROOT%{_bindir}
 install isearch $RPM_BUILD_ROOT/home/httpd/cgi-bin
 install ifetch $RPM_BUILD_ROOT/home/httpd/cgi-bin
 install ihtml $RPM_BUILD_ROOT/home/httpd/cgi-bin
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_bindir}/* || :
 
 gzip -9nf CHANGES COPYRIGHT README
 
