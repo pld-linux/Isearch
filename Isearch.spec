@@ -5,9 +5,9 @@ Version:	1.47b
 Release:	2
 License:	distributable
 Group:		Applications/Text
-Source0:	http://www.etymon.com/pub/Isearch/%{name}-%{version}.tar.gz
+Source0:	http://www.etymon.com/software/Isearch/%{name}-%{version}.tar.gz
 # Source0-md5:	70dbe58eb5d0271cf0daf60a65bfc234
-URL:		http://www.etymon.com/Isearch/
+URL:		http://www.etymon.com/tr.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
