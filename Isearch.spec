@@ -5,6 +5,7 @@ Version:	1.47b
 Release:	2
 License:	distributable
 Group:		Applications/Text
+#Source0Download: http://www.etymon.com/tr.html
 Source0:	http://www.etymon.com/software/Isearch/%{name}-%{version}.tar.gz
 # Source0-md5:	70dbe58eb5d0271cf0daf60a65bfc234
 URL:		http://www.etymon.com/tr.html
@@ -40,7 +41,6 @@ tak¿e interfejs CGI.
 %configure2_13
 %{__make} \
 	CFLAGS="-DUNIX -fwritable-strings -fno-rtti -fno-exceptions %{rpmcflags}"
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
