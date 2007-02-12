@@ -1,5 +1,5 @@
 Summary:	Isearch text search engine
-Summary(pl):	Isearch - silnik przeszukuj±cy tekst
+Summary(pl.UTF-8):   Isearch - silnik przeszukujÄ…cy tekst
 Name:		Isearch
 Version:	1.47b
 Release:	2
@@ -23,16 +23,16 @@ way, provided that you know some C++ (and you will need to ftp the
 source code). A CGI interface is also included for web based
 searching.
 
-%description -l pl
+%description -l pl.UTF-8
 Isearch jest oprogramowaniem do indeksowania i przeszukiwania
-dokumentów tekstowych. Obs³uguje przeszukiwanie ca³ego tekstu, na
-podstawie pól i inne, a tak¿e bazy heterogeniczne. Isearch mo¿e
-przeszukiwaæ wiele rodzajów dokumentów, w tym HTML, foldery pocztowe,
-przegl±dy list, tekst z tagami SGML oraz USMARC. Mo¿e byæ rozszerzony
-aby obs³ugiwa³ inne formaty przez tworzenie klas w C++ definiuj±cych
-strukturê dokumentu. Jest ³atwy do przystosowania pod warunkiem
-znajomo¶ci C++ (potrzebny jest do tego kod ¼ród³owy). Za³±czony jest
-tak¿e interfejs CGI.
+dokumentÃ³w tekstowych. ObsÅ‚uguje przeszukiwanie caÅ‚ego tekstu, na
+podstawie pÃ³l i inne, a takÅ¼e bazy heterogeniczne. Isearch moÅ¼e
+przeszukiwaÄ‡ wiele rodzajÃ³w dokumentÃ³w, w tym HTML, foldery pocztowe,
+przeglÄ…dy list, tekst z tagami SGML oraz USMARC. MoÅ¼e byÄ‡ rozszerzony
+aby obsÅ‚ugiwaÅ‚ inne formaty przez tworzenie klas w C++ definiujÄ…cych
+strukturÄ™ dokumentu. Jest Å‚atwy do przystosowania pod warunkiem
+znajomoÅ›ci C++ (potrzebny jest do tego kod ÅºrÃ³dÅ‚owy). ZaÅ‚Ä…czony jest
+takÅ¼e interfejs CGI.
 
 %prep
 %setup -q -n %{name}
