@@ -1,5 +1,5 @@
 Summary:	Isearch text search engine
-Summary(pl.UTF-8):   Isearch - silnik przeszukujący tekst
+Summary(pl.UTF-8):	Isearch - silnik przeszukujący tekst
 Name:		Isearch
 Version:	1.47b
 Release:	2
